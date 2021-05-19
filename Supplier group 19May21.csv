@@ -1,0 +1,21 @@
+"Bulk Edit Fields"
+"Label","Type","Name","Mandatory","Unique","In List View","In Standard Filter","In Global Search","Bold","Translatable","Precision","Length","Options","Fetch From","Depends On","Perm Level","Hidden","Read Only","Collapsible","Allow Bulk Edit","Collapsible Depends On","Ignore User Permissions","Allow on Submit","Report Hide","Remember Last Selected Value","Default","In Filter","Description","Print Hide","Print Hide If No Value","Print Width","Columns","Width"
+"label","fieldtype","fieldname","reqd","unique","in_list_view","in_standard_filter","in_global_search","bold","translatable","precision","length","options","fetch_from","depends_on","permlevel","hidden","read_only","collapsible","allow_bulk_edit","collapsible_depends_on","ignore_user_permissions","allow_on_submit","report_hide","remember_last_selected_value","default","in_filter","description","print_hide","print_hide_if_no_value","print_width","columns","width"
+" "," "," "," "," "," "," "," "," "," ","Set non-standard precision for a Float or Currency field "," ","For Links, enter the DocType as range.
+For Select, enter list of Options, each on a new line. "," ","This field will appear only if the fieldname defined here has value OR the rules are true (examples): 
+myfield
+eval:doc.myfield=='My Value'
+eval:doc.age>18 "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ","Print Width of the field, if the field is a column in a table ","Number of columns for a field in a Grid (Total Columns in a grid should be less than 11) "," "
+"The CSV format is case sensitive"
+"Do not edit headers which are preset in the template"
+"------"
+"Supplier Group Name","Data","supplier_group_name",1,1,"","","","","","","","","","","","","","","","","","","","","","","","","","","",""
+"Parent Supplier Group","Link","parent_supplier_group","","",1,"","",1,"","","","Supplier Group","","","","","","","","",1,"","","","","","","","","","",""
+"Is Group","Check","is_group","","",1,"","",1,"","","","","","","","","","","","","","","","","","","","","","","",""
+"Credit Limit","Section Break","section_credit_limit","","","","","","","","","","","","","","","",1,"","","","","","","","","","","","","",""
+"Default Payment Terms Template","Link","payment_terms","","","","","","","","","","Payment Terms Template","","","","","","","","","","","","","","","","","","","",""
+"Default Payable Account","Section Break","default_payable_account","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""
+"Accounts","Table","accounts","","","","","","","","","","Party Account","","eval:!doc.__islocal","","","","","","","","","","","","","Mention if non-standard receivable account applicable","","","","",""
+"lft","Int","lft","","","","","","","","","","","","","",1,"","","","","","",1,"","","","",1,"","","",""
+"rgt","Int","rgt","","","","","","","","","","","","","",1,"","","","","","",1,"","","","",1,"","","",""
+"Old Parent","Link","old_parent","","","","","","","","","","Supplier Group","","","",1,"","","","",1,"",1,"","","","",1,"","","",""
